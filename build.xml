@@ -14,7 +14,7 @@
   <mkdir dir="${builddir}/reports/coverage"/>
 
   <!-- PHPUnit -->
-  <exec command="phpunit --log-junit ${builddir}/reports/phpunit.xml  test/CalculatorTest.php"/>
+  <exec command="phpunit --log-junit ${builddir}/reports/phpunit.xml --include-path src test/CalculatorTest.php"/>
 
 </target>
 </project>
